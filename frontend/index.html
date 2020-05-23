@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REST API Demo</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="static/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/icons/favicon-16x16.png">
+	<script src="static/lib.js"></script>
+	<link href="static/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+	<div class="containerForm">
+		<form method="post" id="collectDataForm" onsubmit="return processForm(event)">
+
+    		<label for="firstName">First Name</label>
+    		<input type="text" id="firstName" name="firstName" placeholder="Your first name">
+        <br />
+
+    		<label for="lastName">Last Name</label>
+    		<input type="text" id="lastName" name="lastName" placeholder="Your last name">
+        <br />
+
+    		<label for="email">Email</label>
+    		<input type="text" id="email" name="email" placeholder="Your email address">
+        <br />
+
+    		<label for="eyeColor">Eye Color</label>
+    		<select id="eyeColor" name="eyeColor">
+      			<option value="blue">Blue</option>
+      			<option value="black">Black</option>
+      			<option value="green">Green</option>
+      			<option value="other">Other</option>
+    		</select>
+        <br />
+
+    		<button>Send</button>
+  		</form>
+	</div>
+
+  <br /><br />
+	<div class="container_controllers">
+		<button onclick="return getItems()">Get Items</button>
+		<button>Do Something</button>
+		<button>Do Something Else</button>
+	</div>
+
+  <br /><br />
+	<div class="container_items">
+		<table id="itemsList">
+			<tr>
+    			<th>First Name</th>
+    			<th>Last Name</th>
+    			<th>Email</th>
+          <th>Eye Color</th>
+          <th>ID</th>
+  			</tr>
+  			<!-- items will be dinamically introduced here from JS -->
+		</table>
+	</div>	
+
+</body>
+</html>
