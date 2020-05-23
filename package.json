@@ -1,12 +1,12 @@
 {
-  "name": "test",
+  "name": "REST API Demo",
   "version": "1.0.0",
-  "description": "test",
-  "main": "index.js",
+  "description": "REST API Demo",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Andrei Tanasescu",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
